@@ -4,7 +4,7 @@ class Vehicle {
     protected double distanceTraveled;
     protected double maxSpeed;
 
-    public Vehicle(String model, double fuelEfficiency, double distanceTraveled, double maxSpeed) {
+    public Vehicle1(String model, double fuelEfficiency, double distanceTraveled, double maxSpeed) {
         this.model = model;
         this.fuelEfficiency = fuelEfficiency;
         this.distanceTraveled = distanceTraveled;
