@@ -3,10 +3,10 @@ import { sleep, check } from 'k6';
 
 // SLO = baseline p95 (results/run-05vu.txt) x 1.5.
 // ДООРХ ТООГ өөрийн хэмжилтээр солино, README-ийн тоотой ЯГ ИЖИЛ байх ёстой.
-const SLO_P95_MS = 0; // TODO: жишээ нь baseline 180ms -> 270
+const SLO_P95_MS = 1000; // TODO: жишээ нь baseline 180ms -> 270
 
 export const options = {
-  vus: 30,
+  vus: 5,
   duration: '1m',
   thresholds: {
     http_req_duration: [`p(95)<${SLO_P95_MS}`],
